@@ -1,0 +1,229 @@
+body {
+	width: 100%;
+	font-size: 16px;
+}
+.choice-lung {
+	position: relative;
+	height: 20px;
+	border: 1px solid blue;
+	width: 80/1200*100%;
+	margin-left: 1000/1200*100%;
+	margin-bottom: -20px;
+}
+.choice-lung-content-ul {
+	position: absolute;
+	display: none;
+	background: white;
+	border: 1px solid black;
+	text-align: center;
+	width: 100%;
+}
+.choice-lung:hover .choice-lung-content-ul {
+	display: block;
+}
+
+.choice-lung-content-ul ul {
+	list-style-type: none;
+	display: inline-block;
+	border: 1px solid blue;
+	text-align: center
+}
+.choice-lung-content-ul li {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: 50px;
+	list-style-type: none;
+	display: inline-block;
+	border: 1px solid blue;
+	width: 100%;
+}
+.item-lung:hover {
+	background:  	#FAFAD2;
+}
+/*.choice-lung:after {
+	content: url(images/arrow-for-lung.png);
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border: 1px solid green;
+} */
+	.arrow-lung {
+		display:inline-block;
+		margin-bottom: 5px;
+	}
+header {
+	display: flex;
+	font-size: 1em;	
+	width: 99%;
+	border: 1px solid black;
+}
+.header-logo {
+	width: 145/1200*100%;
+	margin-left: 30/1200*100%;
+    margin-right: 0;
+	border: 1px solid yellow;
+	text-align: center;
+	padding-top: 10px;
+}
+.header-main-city {
+    margin-left: 40/1200*100%;
+	width: 150/1200*100%;
+	text-align: left;
+	list-style-type: none;
+    border: 1px solid black;
+}
+.header-main-city  ul {
+	list-style-type: none;
+    border: 1px solid blue;
+    text-align: left;
+    padding-left: 0;
+}
+.header-main-city  ul li {
+    display: inline-block;
+    border: 1px solid green;
+}
+.header-contact-telephone {
+	width: 160/1200*100%;
+	text-align: center;
+    margin-left: 40/1200*100%;
+}
+.header-contact-telephone  ul {
+	list-style-type: none;
+    padding-left: 0;
+}
+.header__take-request {
+    margin-left: 40/1200*100%;
+	width: 150/1200*100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 160/1200*100%;
+	background: #a32c29;
+	color: white;
+	height: 40px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.header__our-email {
+    margin-left: 40/1200*100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 165/1200*100%;
+	text-align: center;
+}
+.header__search-text {
+	width: 230/260*100%;
+	border-style: none;
+	border: black 1px solid;
+	height: 20px;
+}
+.header__search-submit {
+	width: 20/260*100%;
+	background: #a32c29;
+	border-style: none;
+	background-image: url(images/search-magnifear.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	margin-left: -2px;
+	height: 24px;
+}
+.header__search {
+    margin-left: 40/1200*100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 260/1200*100%;
+	border: black solid 1px;
+}
+/****end header ***************************/
+/*==========================================================================*/
+
+/***** top-menu****************************/
+.top-menu {
+    font-size: 1.124em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background: #011627;
+}
+
+.top-menu__link {
+    position:relative;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+.top-menu__link:after {
+    display: none;
+    content:" ";
+    position: absolute;
+    height: 2px;
+    width: 90%;
+    left: 5%;
+    bottom: -13px;
+    background: red;
+}
+.top-menu__link:hover {
+    color: red;
+}
+
+.top-menu__link:hover:after {
+
+    display: block;
+}
+/**********************end the top-menu ****************************/
+/*=======================================================================*/
+
+/***************** content *********************************************/
+.content {
+	width: 1165/1200*100%;
+	margin-left: 30/1200*100%;
+}
+/******* side-bar ********/
+aside {
+	width: 300/1165*100%;
+	background: #f9f9f9;
+	border: 1px solid black;
+	list-style-type: none;
+	box-shadow:0 1px 4px rgba(0, 0, 0, .3), -10px 0 20px -23px rgba(0, 0, 0, .8), 10px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) ;
+}
+aside ul {
+	list-style-type: none;
+	padding-left:0;
+}
+aside ul li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: black;
+}
+aside ul li:hover{
+	padding-top: 0;
+	text-decoration: none;
+	background: #a32c29;
+	color: white;
+}
+aside ul li {
+	font-size: 1em;
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid red;	
+        padding-left: 30/300*100%;	
+        padding-right: 30/300*100%;	
+	text-decoration: none;
+	text-align: center;
+	box-sizing: border-box;
+	background: #f9f9f9;
+	border: 1px solid black;
+	margin-top: 0;
+}
+.caption-list {
+	font-size: 24/16*1em;
+	padding-top: 25px;
+	padding-bottom:  25px;
+}
+

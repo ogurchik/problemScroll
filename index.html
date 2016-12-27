@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div class="iMove"></div>
+	<div class="iDisappear"></div>
+	<section id="bio">
+		<h2>Who’s Hot Right Now?</h2>
+		<h3>Beau Dandy</h3>
+		<div>
+			<img src="../images/beau_100.jpg" width="100"
+			height="100" alt="Beau Dandy"/>
+			<p>Content about Beau Dandy</p>
+		</div>
+		<h3>Johnny Stardust</h3>
+		<div>
+			<img src="../images/johnny_100.jpg" width="100"
+			height="100" alt="Johnny Stardust"/>
+			<p>Content about Johnny Stardust</p>
+		</div>
+		<h3>Glendatronix</h3>
+		<div>
+			<img src="../images/glenda_100.jpg" width="100"
+			height="100" alt="Glendatronix"/>
+			<p>Content about Glendatronix</p>
+		</div>
+	</section>
+	<button class="triger">
+		trig mi
+	</button>
+
+	<div class="scroll">
+	</div>
+	<div class="over">
+	</div>
+	<div class="fish">
+	</div>
+	<script src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+		$('#bio > div').hide();
+	</script>
+	<script type="text/javascript">
+			$(".triger").click(function(){
+				console.log($('.scroll').scrollTop())
+			})
+$(window).scroll(function() {
+var rect = document.querySelector('.over');
+var rect = rect.getBoundingClientRect();
+	console.log(rect.top);
+	$('.scroll').animate({
+		height: "-400px"
+	}, 1000)
+})
+	</script>
+</body>
+</html>
