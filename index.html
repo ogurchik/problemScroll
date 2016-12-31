@@ -56,17 +56,13 @@ var rect = rect.getBoundingClientRect();
 	}, 1000)
 })
 var previousScroll = 0;
+var detectCondition =0;
 (function() {
     $(window).scroll(function(){
         var currentScroll = $(this).scrollTop();
         var coord = document.querySelector('.over');
         coord = coord.getBoundingClientRect();
-        if(currentScroll > previousScroll){
-            console.log("down"+"over's top"+coord.top);
-        } else {
-            console.log("up"+"over's top"+coord.top);
-        }
-        previousScroll = currentScroll;
+
     });
 }());
 console.log("scrooool"+previousScroll);
