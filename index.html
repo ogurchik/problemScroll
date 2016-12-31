@@ -54,27 +54,27 @@ var rect = rect.getBoundingClientRect();
 })
 var previousScroll = 0;
 var detectCondition =0;
+var descriptor = 0;
 (function() {
     $(window).scroll(function(){
         var currentScroll = $(this).scrollTop();
         var coord = document.querySelector('.over');
         coord = coord.getBoundingClientRect();
-        var descriptor = 0;
-        if(currentScroll >  previousScroll && coord.top<110 ){
+	console.log('Im Desrripot' + descriptor);
+        if(currentScroll >  previousScroll && coord.top<200 && descriptor == 0  ){
             console.log("scroll down"+ coord.top+ " block less 50");
         $('.scroll').animate({
             height: "-400px"
         }, 1000)
         descriptor = 1;
         }         
-        if(currentScroll <  previousScroll && coord.top>30 ){
+        if(currentScroll <  previousScroll && coord.top>30 && descriptor == 1 ){
             console.log("scroll UPPPP"+ coord.top+ " block less 50");
         $('.scroll').animate({
             height: "+400px"
         }, 1000)
         descriptor = 0;
         }         
-        console.log("i D " +descriptor);
         previousScroll = currentScroll;
         console.log("coord top" + coord.top)
     });
