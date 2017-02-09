@@ -1,21 +1,6 @@
 body {
   width: 100%;
   font-size: 16px; }
-  .iMove {
-	  width: 20px;
-	  height: 20px;
-	  background: black;
-  }
-  .iDisappear {
-	  width: 20px;
-	  height: 20px;
-	  background: red;
-  }
-  .fish {
-	  height: 500px;
-	  width: 100%;
-	  border: 1px solid black;
-  }
 
 .choice-lung {
   position: relative;
@@ -235,15 +220,30 @@ aside ul li {
   padding-top: 25px;
   padding-bottom: 25px; }
 
+.for-popUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.for-popUp div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.for-popUp img {
+  margin: 5%; }
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border: 2px solid red;
+  overflow: hidden;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 1000px; }
+
 /*# sourceMappingURL=style.css.map */
-  .scroll {
-	  width: 80%;
-	  height: 400px;
-	  border: 1px solid black;
-  }
-  .over {
-	  width: 80%;
-	  height: 300px;
-	  border: 1px solid red;
-	  background: #beceda;
-  }

@@ -39,6 +39,12 @@
 	</div>
 	<div class="fish">
 	</div>
+	<div class="for-popUp">
+		<div class="modal"> <img src="images/Spyglass.png" alt=""> </div> 
+		<div><img src="images/Spyglass.png" alt=""><img src="images/forest.png" alt=""></div>
+		<div><img src="images/sea.png" alt=""><img src="images/shark.png" alt=""></div>
+
+	</div>
 	<script src="jquery-1.7.1.min.js"></script>
 	<script type="text/javascript">
 		$('#bio > div').hide();
@@ -54,6 +60,7 @@ var rect = rect.getBoundingClientRect();
 })
 var previousScroll = 0;
 var detectCondition =0;
+/**
 var descriptor = 0;
 (function() {
     $(window).scroll(function(){
@@ -79,7 +86,15 @@ var descriptor = 0;
         console.log("coord top" + coord.top)
     });
 }());
+**/
 console.log("scrooool"+previousScroll);
+$('.modal').hide();
+$('.for-popUp img').click(function() {
+	var tora = $(this).attr('src');
+	console.log(tora);
+	$('.modal').fadeIn({}, 300);
+})
 	</script>
+
 </body>
 </html>
